@@ -1,0 +1,760 @@
+
+/* =========================================
+   CHALOCHALE - RESPONSIVE STYLESHEET
+   ========================================= */
+
+
+/* TABLETS AND SMALL LAPTOPS */
+
+@media (max-width: 1199px) {
+
+    .navbar-nav .nav-link {
+        margin: 0 5px;
+        font-size: 13px;
+    }
+
+    .hero {
+        min-height: 600px;
+    }
+
+    .destination-image {
+        height: 220px;
+    }
+
+    .experience-card {
+        height: 300px;
+    }
+
+}
+
+
+/* TABLETS */
+
+@media (max-width: 991px) {
+
+    /* Navbar */
+
+    .navbar {
+        padding: 12px 0;
+    }
+
+    .navbar-nav {
+        padding-top: 15px;
+        align-items: flex-start !important;
+    }
+
+    .navbar-nav .nav-link {
+        margin: 6px 0;
+        font-size: 14px;
+    }
+
+    .navbar .btn-login,
+    .navbar .btn-signup {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .navbar .d-flex {
+        margin-left: 0 !important;
+        margin-top: 15px;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        min-height: 570px;
+        background-position: center;
+    }
+
+    .hero-content {
+        padding: 90px 0 120px;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+
+    /* Search */
+
+    .search-wrapper {
+        margin-top: -35px;
+    }
+
+    .search-box {
+        padding: 24px;
+    }
+
+
+    /* Sections */
+
+    .section-padding {
+        padding: 75px 0;
+    }
+
+    .destination-image {
+        height: 230px;
+    }
+
+    .experience-card {
+        height: 300px;
+    }
+
+    .feature-card {
+        padding: 25px 20px;
+    }
+
+    footer {
+        padding: 55px 0 20px;
+    }
+
+}
+
+
+/* MOBILE PHONES */
+
+@media (max-width: 767px) {
+
+    /* Navbar */
+
+    .navbar-brand {
+        font-size: 22px;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        min-height: 540px;
+        background-position: center;
+    }
+
+    .hero-content {
+        padding: 75px 0 100px;
+    }
+
+    .hero-tag {
+        font-size: 10px;
+        padding: 8px 12px;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .hero-btn {
+        padding: 12px 20px;
+        font-size: 13px;
+    }
+
+    .hero-link {
+        display: inline-block;
+        margin: 17px 0 0;
+        font-size: 13px;
+    }
+
+
+    /* Search */
+
+    .search-wrapper {
+        margin-top: -30px;
+    }
+
+    .search-box {
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .search-box label {
+        font-size: 12px;
+    }
+
+
+    /* Common sections */
+
+    .section-padding {
+        padding: 65px 0;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .section-desc {
+        font-size: 14px;
+    }
+
+
+    /* Destinations */
+
+    .destination-image {
+        height: 240px;
+    }
+
+    .destination-body {
+        padding: 18px;
+    }
+
+
+    /* Experiences */
+
+    .experience-card {
+        height: 320px;
+    }
+
+
+    /* Features */
+
+    .feature-card {
+        padding: 25px;
+    }
+
+
+    /* CTA */
+
+    .cta-section {
+        padding: 70px 15px;
+    }
+
+    .cta-section h2 {
+        font-size: 30px;
+    }
+
+    .cta-section p {
+        font-size: 14px;
+    }
+
+
+    /* Testimonials */
+
+    .testimonial-card {
+        padding: 22px;
+    }
+
+
+    /* Footer */
+
+    footer {
+        padding: 50px 0 20px;
+    }
+
+    footer h5 {
+        margin-bottom: 15px;
+    }
+
+}
+
+
+/* SMALL MOBILE PHONES */
+
+@media (max-width: 480px) {
+
+    .hero {
+        min-height: 510px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-tag {
+        font-size: 9px;
+    }
+
+    .hero-content {
+        padding: 65px 0 90px;
+    }
+
+    .section-title {
+        font-size: 27px;
+    }
+
+    .section-subtitle {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+    }
+
+    .search-box {
+        padding: 16px;
+    }
+
+    .destination-image {
+        height: 210px;
+    }
+
+    .experience-card {
+        height: 280px;
+    }
+
+    .cta-section h2 {
+        font-size: 26px;
+    }
+
+    .footer-logo {
+        font-size: 23px;
+    }
+
+}
+
+
+/* LARGE DESKTOP SCREENS */
+
+@media (min-width: 1400px) {
+
+    .hero {
+        min-height: 720px;
+    }
+
+    .hero h1 {
+        max-width: 850px;
+    }
+
+    .section-padding {
+        padding: 110px 0;
+    }
+
+}
+
+
+
+
+        
+
+
+/* =========================================
+   DESTINATIONS PAGE RESPONSIVE DESIGN
+   ========================================= */
+
+
+@media (max-width: 991px) {
+
+    .destination-banner {
+        padding: 80px 20px;
+    }
+
+    .destination-banner h1 {
+        font-size: 40px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .destination-banner {
+        padding: 65px 15px;
+    }
+
+    .destination-banner h1 {
+        font-size: 34px;
+    }
+
+    .destination-search {
+        margin-top: -25px;
+    }
+
+    .filter-btn {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    .place-image {
+        height: 220px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .destination-banner h1 {
+        font-size: 29px;
+    }
+
+    .destination-banner p {
+        font-size: 13px;
+    }
+
+    .destination-search {
+        padding: 16px;
+    }
+
+    .place-content {
+        padding: 17px;
+    }
+
+    .place-content h5 {
+        font-size: 17px;
+    }
+
+}
+
+@media(max-width: 576px) {
+
+            .destination-banner {
+                padding: 75px 15px;
+            }
+
+            .destination-banner h1 {
+                font-size: 34px;
+            }
+
+            .destination-search {
+                padding: 18px;
+            }
+
+            .place-image {
+                height: 210px;
+            }
+        }
+
+
+
+
+        
+        
+/* =========================================
+   PACKAGES PAGE RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 991px) {
+
+    .package-banner {
+        padding: 80px 20px;
+    }
+
+    .package-banner h1 {
+        font-size: 40px;
+    }
+
+    .package-image {
+        height: 220px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .package-banner {
+        padding: 65px 15px;
+    }
+
+    .package-banner h1 {
+        font-size: 34px;
+    }
+
+    .package-search {
+        margin-top: -25px;
+    }
+
+    .package-filter {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    .package-image {
+        height: 230px;
+    }
+
+    .package-content {
+        padding: 18px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .package-banner h1 {
+        font-size: 29px;
+    }
+
+    .package-banner p {
+        font-size: 13px;
+    }
+
+    .package-search {
+        padding: 16px;
+    }
+
+    .package-price {
+        font-size: 19px;
+    }
+
+}
+
+@media(max-width:576px) {
+
+            .package-banner {
+                padding: 70px 15px;
+            }
+
+            .package-banner h1 {
+                font-size: 34px;
+            }
+
+            .package-search {
+                padding: 18px;
+            }
+
+            .package-image {
+                height: 210px;
+            }
+
+            .package-content {
+                padding: 18px;
+            }
+
+        }
+
+
+
+
+
+
+
+
+
+
+        
+/* Booking Page Responsive */
+
+@media (max-width: 991px) {
+    .booking-section {
+        padding: 50px 0;
+    }
+
+    .booking-summary {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .booking-banner {
+        padding: 60px 15px;
+    }
+
+    .booking-card,
+    .booking-summary,
+    .booking-help {
+        padding: 22px;
+    }
+
+    .booking-section {
+        padding: 35px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .booking-banner h1 {
+        font-size: 34px;
+    }
+
+    .booking-card,
+    .booking-summary,
+    .booking-help {
+        padding: 18px;
+        border-radius: 12px;
+    }
+
+    .summary-item {
+        font-size: 13px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* About Page Responsive */
+
+@media (max-width: 991px) {
+    .about-hero {
+        padding: 85px 20px;
+    }
+
+    .about-image-wrapper {
+        margin-bottom: 10px;
+    }
+
+    .about-main-image {
+        height: 350px;
+    }
+
+    .about-travel-section {
+        text-align: center;
+    }
+
+    .about-travel-section .about-cta-btn {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-hero {
+        padding: 65px 15px;
+    }
+
+    .section-padding,
+    .mission-section {
+        padding: 55px 0;
+    }
+
+    .about-main-image {
+        height: 300px;
+    }
+
+    .mission-card {
+        padding: 25px;
+    }
+
+    .why-card {
+        padding: 23px;
+    }
+
+    .about-travel-section {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-hero h1 {
+        font-size: 35px;
+    }
+
+    .about-main-image {
+        height: 250px;
+    }
+
+    .about-image-label {
+        left: 12px;
+        bottom: 12px;
+        font-size: 13px;
+    }
+}
+
+
+
+
+
+/* Contact Page Responsive */
+
+@media (max-width: 991px) {
+    .contact-hero {
+        padding: 80px 20px;
+    }
+
+    .contact-details-card {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .contact-hero {
+        padding: 65px 15px;
+    }
+
+    .contact-info-section {
+        padding-top: 40px;
+    }
+
+    .contact-main-section,
+    .contact-map-section {
+        padding: 45px 0;
+    }
+
+    .contact-form-card,
+    .contact-details-card {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-hero h1 {
+        font-size: 35px;
+    }
+
+    .contact-form-card,
+    .contact-details-card {
+        padding: 20px;
+    }
+
+    .contact-info-card {
+        padding: 23px 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* Login and Signup Responsive */
+
+@media (max-width: 767px) {
+    .auth-section {
+        min-height: auto;
+        padding: 50px 0;
+    }
+
+    .auth-card {
+        padding: 30px 22px;
+    }
+
+    .auth-title {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .auth-card {
+        padding: 25px 18px;
+    }
+
+    .auth-options {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Signup Page Responsive */
+
+@media (max-width: 767px) {
+    .signup-section {
+        padding: 40px 0;
+    }
+
+    .signup-card {
+        padding: 28px 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .signup-card {
+        padding: 23px 17px;
+    }
+
+    .signup-card .auth-title {
+        font-size: 24px;
+    }
+}

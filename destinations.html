@@ -1,0 +1,699 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Destinations | ChaloChale</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="assets/css/media.css">
+
+    
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+                <i class="fa-solid fa-plane-departure"></i>
+                ChaloChale
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="destinations.html">Destinations</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="packages.html">Packages</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="booking.html">Booking</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+                <div class="d-flex flex-column flex-lg-row gap-2 ms-lg-3 mt-3 mt-lg-0">
+
+                    <a href="signup.html" class="btn btn-login text-center">
+                        Sign Up
+                    </a>
+
+                    <a href="login.html" class="btn btn-signup text-center">
+                        Login
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= PAGE BANNER ================= -->
+
+    <section class="destination-banner">
+
+        <div class="container">
+
+            <div class="section-subtitle" style="color:#f4b942;">
+                Explore the world with us
+            </div>
+
+            <h1>Discover Amazing Destinations</h1>
+
+            <p class="mt-3">
+                Find your next favourite place and create unforgettable memories.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SEARCH SECTION ================= -->
+
+    <section class="container">
+
+        <div class="destination-search">
+
+            <div class="row g-3 align-items-end">
+
+                <div class="col-lg-6 col-md-6">
+
+                    <label class="form-label fw-bold">
+                        Search Destination
+                    </label>
+
+                    <input type="text" id="destination-search"
+                        class="form-control"
+                        placeholder="Search Goa, Dubai, Bali...">
+
+                </div>
+
+                <div class="col-lg-3 col-md-3">
+
+                    <label class="form-label fw-bold">
+                        Category
+                    </label>
+
+                    <select class="form-select" id="category-select">
+
+                        <option value="all">All Categories</option>
+                        <option value="beach">Beach</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="city">City</option>
+                        <option value="nature">Nature</option>
+
+                    </select>
+
+                </div>
+
+                <div class="col-lg-3 col-md-3">
+
+                    <button class="search-btn" id="destination-search-btn">
+
+                        <i class="fa-solid fa-magnifying-glass me-2"></i>
+                        Search
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= DESTINATIONS ================= -->
+
+    <section class="section-padding">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <div class="section-subtitle">
+                    Explore our collection
+                </div>
+
+                <h2 class="section-title">
+                    Popular Travel Destinations
+                </h2>
+
+                <p class="section-desc">
+                    Choose your dream destination and start planning your journey.
+                </p>
+
+            </div>
+
+
+            <!-- Category Buttons -->
+
+            <div class="d-flex flex-wrap justify-content-center gap-2 mb-5">
+
+                <button class="filter-btn active" data-filter="all">
+                    All Places
+                </button>
+
+                <button class="filter-btn" data-filter="beach">
+                    <i class="fa-solid fa-umbrella-beach me-1"></i>
+                    Beaches
+                </button>
+
+                <button class="filter-btn" data-filter="adventure">
+                    <i class="fa-solid fa-mountain-sun me-1"></i>
+                    Adventure
+                </button>
+
+                <button class="filter-btn" data-filter="city">
+                    <i class="fa-solid fa-city me-1"></i>
+                    Cities
+                </button>
+
+                <button class="filter-btn" data-filter="nature">
+                    <i class="fa-solid fa-tree me-1"></i>
+                    Nature
+                </button>
+
+            </div>
+
+
+            <!-- Destination Cards -->
+
+            <div class="row g-4" id="destination-list">
+
+
+                <!-- GOA -->
+
+                <div class="col-lg-4 col-md-6 destination-item"
+                    data-name="goa india"
+                    data-category="beach">
+
+                    <div class="place-card">
+
+                        <div class="place-image">
+
+                            <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=900"
+                                alt="Goa Beach">
+
+                            <span class="place-category">Beach</span>
+
+                        </div>
+
+                        <div class="place-content">
+
+                            <h5>Goa, India</h5>
+
+                            <p class="place-location">
+                                <i class="fa-solid fa-location-dot me-1"></i>
+                                Western India
+                            </p>
+
+                            <p class="place-description">
+                                Enjoy golden beaches, beautiful sunsets and exciting nightlife.
+                            </p>
+
+                            <div class="place-details">
+
+                                <div class="place-rating">
+                                    <i class="fa-solid fa-star"></i> 4.8
+                                </div>
+
+                                <div class="place-price">
+                                    ₹8,999 <small>/ person</small>
+                                </div>
+
+                            </div>
+
+                            <a href="booking.html?destination=Goa"
+                                class="place-btn">
+                                Explore Destination
+                                <i class="fa-solid fa-arrow-right ms-2"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DUBAI -->
+
+                <div class="col-lg-4 col-md-6 destination-item"
+                    data-name="dubai uae"
+                    data-category="city">
+
+                    <div class="place-card">
+
+                        <div class="place-image">
+
+                            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=900"
+                                alt="Dubai">
+
+                            <span class="place-category">City</span>
+
+                        </div>
+
+                        <div class="place-content">
+
+                            <h5>Dubai, UAE</h5>
+
+                            <p class="place-location">
+                                <i class="fa-solid fa-location-dot me-1"></i>
+                                Middle East
+                            </p>
+
+                            <p class="place-description">
+                                Discover luxury shopping, iconic buildings and desert adventures.
+                            </p>
+
+                            <div class="place-details">
+
+                                <div class="place-rating">
+                                    <i class="fa-solid fa-star"></i> 4.9
+                                </div>
+
+                                <div class="place-price">
+                                    ₹35,999 <small>/ person</small>
+                                </div>
+
+                            </div>
+
+                            <a href="booking.html?destination=Dubai"
+                                class="place-btn">
+                                Explore Destination
+                                <i class="fa-solid fa-arrow-right ms-2"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BALI -->
+
+                <div class="col-lg-4 col-md-6 destination-item"
+                    data-name="bali indonesia"
+                    data-category="beach">
+
+                    <div class="place-card">
+
+                        <div class="place-image">
+
+                            <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=900"
+                                alt="Bali">
+
+                            <span class="place-category">Beach</span>
+
+                        </div>
+
+                        <div class="place-content">
+
+                            <h5>Bali, Indonesia</h5>
+
+                            <p class="place-location">
+                                <i class="fa-solid fa-location-dot me-1"></i>
+                                Southeast Asia
+                            </p>
+
+                            <p class="place-description">
+                                Experience tropical beaches, temples and peaceful landscapes.
+                            </p>
+
+                            <div class="place-details">
+
+                                <div class="place-rating">
+                                    <i class="fa-solid fa-star"></i> 4.9
+                                </div>
+
+                                <div class="place-price">
+                                    ₹42,999 <small>/ person</small>
+                                </div>
+
+                            </div>
+
+                            <a href="booking.html?destination=Bali"
+                                class="place-btn">
+                                Explore Destination
+                                <i class="fa-solid fa-arrow-right ms-2"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- MANALI -->
+
+                <div class="col-lg-4 col-md-6 destination-item"
+                    data-name="manali himachal pradesh"
+                    data-category="adventure">
+
+                    <div class="place-card">
+
+                        <div class="place-image">
+
+                            <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=900"
+                                alt="Manali">
+
+                            <span class="place-category">Adventure</span>
+
+                        </div>
+
+                        <div class="place-content">
+
+                            <h5>Manali, India</h5>
+
+                            <p class="place-location">
+                                <i class="fa-solid fa-location-dot me-1"></i>
+                                Himachal Pradesh
+                            </p>
+
+                            <p class="place-description">
+                                Explore snowy mountains, trekking trails and scenic valleys.
+                            </p>
+
+                            <div class="place-details">
+
+                                <div class="place-rating">
+                                    <i class="fa-solid fa-star"></i> 4.7
+                                </div>
+
+                                <div class="place-price">
+                                    ₹12,999 <small>/ person</small>
+                                </div>
+
+                            </div>
+
+                            <a href="booking.html?destination=Manali"
+                                class="place-btn">
+                                Explore Destination
+                                <i class="fa-solid fa-arrow-right ms-2"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- KASHMIR -->
+
+                <div class="col-lg-4 col-md-6 destination-item"
+                    data-name="kashmir srinagar"
+                    data-category="nature">
+
+                    <div class="place-card">
+
+                        <div class="place-image">
+
+                            <img src="https://images.unsplash.com/photo-1595815771614-ade9d652a65d?w=900"
+                                alt="Kashmir">
+
+                            <span class="place-category">Nature</span>
+
+                        </div>
+
+                        <div class="place-content">
+
+                            <h5>Kashmir, India</h5>
+
+                            <p class="place-location">
+                                <i class="fa-solid fa-location-dot me-1"></i>
+                                Jammu and Kashmir
+                            </p>
+
+                            <p class="place-description">
+                                Discover beautiful lakes, gardens and breathtaking mountain views.
+                            </p>
+
+                            <div class="place-details">
+
+                                <div class="place-rating">
+                                    <i class="fa-solid fa-star"></i> 4.9
+                                </div>
+
+                                <div class="place-price">
+                                    ₹15,999 <small>/ person</small>
+                                </div>
+
+                            </div>
+
+                            <a href="booking.html?destination=Kashmir"
+                                class="place-btn">
+                                Explore Destination
+                                <i class="fa-solid fa-arrow-right ms-2"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SWITZERLAND -->
+
+                <div class="col-lg-4 col-md-6 destination-item"
+                    data-name="switzerland zurich"
+                    data-category="nature">
+
+                    <div class="place-card">
+
+                        <div class="place-image">
+
+                            <img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=900"
+                                alt="Switzerland">
+
+                            <span class="place-category">Nature</span>
+
+                        </div>
+
+                        <div class="place-content">
+
+                            <h5>Switzerland</h5>
+
+                            <p class="place-location">
+                                <i class="fa-solid fa-location-dot me-1"></i>
+                                Europe
+                            </p>
+
+                            <p class="place-description">
+                                Enjoy stunning alpine landscapes, scenic trains and lakes.
+                            </p>
+
+                            <div class="place-details">
+
+                                <div class="place-rating">
+                                    <i class="fa-solid fa-star"></i> 5.0
+                                </div>
+
+                                <div class="place-price">
+                                    ₹1,25,999 <small>/ person</small>
+                                </div>
+
+                            </div>
+
+                            <a href="booking.html?destination=Switzerland"
+                                class="place-btn">
+                                Explore Destination
+                                <i class="fa-solid fa-arrow-right ms-2"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- No Results -->
+
+            <div class="no-results" id="no-results">
+
+                <i class="fa-solid fa-map-location-dot"></i>
+
+                <h4>No Destinations Found</h4>
+
+                <p>
+                    Try another destination or select a different category.
+                </p>
+
+                <button class="btn btn-outline-dark mt-2" id="reset-search">
+                    Reset Filters
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="footer-logo">
+                        <i class="fa-solid fa-plane-departure"></i>
+                        ChaloChale
+                    </div>
+
+                    <p>
+                        Explore beautiful destinations, enjoy exciting experiences
+                        and create memories that last forever.
+                    </p>
+
+                    <div class="social-links mt-3">
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="Twitter">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+
+                    <h5>Quick Links</h5>
+
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="destinations.html">Destinations</a></p>
+                    <p><a href="packages.html">Packages</a></p>
+                    <p><a href="booking.html">Booking</a></p>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h5>Useful Links</h5>
+
+                    <p><a href="about.html">About Us</a></p>
+                    <p><a href="contact.html">Contact</a></p>
+                    <p><a href="signup.html">Sign Up</a></p>
+                    <p><a href="login.html">Login</a></p>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h5>Contact Us</h5>
+
+                    <p>
+                        <i class="fa-solid fa-envelope me-2"></i>
+                        info@chalochale.com
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-phone me-2"></i>
+                        +91 9876543210
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-location-dot me-2"></i>
+                        India
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p class="mb-0">
+                    &copy; 2026 ChaloChale. All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
