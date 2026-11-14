@@ -141,3 +141,5 @@ Booking, contact, login, and signup forms currently demonstrate frontend validat
 ⭐ If you like this project, consider giving the repository a star!
 
 **ChaloChale – Your Journey, Our Inspiration!**
+
+Website deployment update
