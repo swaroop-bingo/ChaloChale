@@ -137,9 +137,13 @@ Booking, contact, login, and signup forms currently demonstrate frontend validat
 - Project Repository: [ChaloChale](https://github.com/swaroop-bingo/ChaloChale)
 
 ---
+## 🌐 Live Website
 
+**Visit ChaloChale:** [https://swaroop-bingo.github.io/ChaloChale/](https://swaroop-bingo.github.io/ChaloChale/)
+
+Explore destinations, discover holiday packages, and plan your next trip with ChaloChale!
 ⭐ If you like this project, consider giving the repository a star!
 
 **ChaloChale – Your Journey, Our Inspiration!**
 
-Website deployment update
+
